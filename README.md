@@ -20,3 +20,24 @@ Y también un contenedor donde salga el error si la API falla.
 
 Dentro del main he puesto un contenedor donde salga si el test ha sido superado o no y además otro contenedor donde aparezca la grafica.
 
+
+## JAVASCRIPT
+> JS Home
+
+Cuando se carga la página se ejecuta la función para que aparezca el botón por empezar el QUIZ. La grafica aparecerá después el primer tentativo finalizado con la fecha puesta como etiqueta.
+
+> JS Script
+
+Cuando se carga la página aparecen las categorias para empezar el quiz y un bóton para volver a la home.
+Una vez que se eliga la categoria, en base a la elegida, apareceran las preguntas y posibles repsuestas random.
+En lugar de crear un div por cada pregunta, he inicializado un contador y con el metodo **setTimeout**, una vez contestado, se incrementa y vuelve a llamar a la función **mostrarPregunta**, sostituyendo la pregunta actual con la siguiente.
+** SI LA API FALLA SALE EL ERROR EN PANTALLA **
+
+> JS Results
+
+Cuando se carga la página se muestra simplemente si hay superado o no el quiz **(Superado si contestas más de 6 respuestas correctamente)**.
+Y, además, aparece la grafica solamente del tentativo actual.
+
+
+Espero que se entienda lo mejoooor posible!!! 
+- Donato Marino
