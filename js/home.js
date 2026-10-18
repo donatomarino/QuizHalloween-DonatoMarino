@@ -6,7 +6,7 @@ window.addEventListener('load', function () { // Se ejecuta al cargar la página
     let enlace = document.createElement('a');
     let boton = document.createElement('button');
     let txtBtn = document.createTextNode('Empezamos');
-    enlace.href = "../html/question.html";
+    enlace.href = "html/question.html";
     boton.setAttribute('class', 'btn-comienzo');
     boton.appendChild(txtBtn);
     enlace.appendChild(boton);

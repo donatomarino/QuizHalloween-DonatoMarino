@@ -109,7 +109,7 @@ function mostrarGrafica() {
     let enlace = document.createElement('a');
     let boton = document.createElement('button');
     let txtBtn = document.createTextNode('Quiero volver a hacer el Quiz');
-    enlace.href = "../html/home.html";
+    enlace.href = "../index.html";
     boton.setAttribute('class', 'btn-comienzo');
     boton.appendChild(txtBtn);
     enlace.appendChild(boton);

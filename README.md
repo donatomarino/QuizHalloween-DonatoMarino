@@ -1,43 +1,26 @@
-# QuizHalloween-DonatoMarino
+# 🎃 Quiz de Halloween
 
-## HTML
->HTML home
+Quiz de preguntas por categoría hecho con HTML, CSS y JavaScript puro (sin frameworks ni build).
 
-He puesto un contenedor para todos los elementos (En los 3 HTML), de forma que el contenido ocupe el 100% del viewport.
-Hay 3 secciones:
+## Cómo funciona
 
-- Header
-- Main con dentro otro div por el h2
-- Footer
+1. **Inicio** (`index.html`): botón para empezar y gráfica con el historial de intentos.
+2. **Preguntas** (`html/question.html`): eliges categoría y se cargan preguntas con respuestas aleatorias desde una API. Si la API falla, se muestra un error.
+3. **Resultados** (`html/results.html`): indica si has superado el quiz (mínimo 6 respuestas correctas) y muestra la gráfica del intento actual.
 
-> HTML page question
+Los resultados se guardan en `localStorage` y las gráficas usan [Chart.js](https://www.chartjs.org/).
 
-Dentro del main he puesto un menu desplegable para que puedas eligir la categoría y un botón para volver a la Home.
-Además hay un contenedor para insertar las preguntas y las respuestas desde el JS.
-Y también un contenedor donde salga el error si la API falla.
+## Estructura
 
-> HTML page results
+```
+index.html      → página de inicio
+html/           → preguntas y resultados
+js/             → home.js, script.js, results.js
+style.css, img/
+```
 
-Dentro del main he puesto un contenedor donde salga si el test ha sido superado o no y además otro contenedor donde aparezca la gráfica.
+## Ejecutar / desplegar
 
+Abre `index.html` en el navegador.
 
-## JAVASCRIPT
-> JS Home
-
-Cuando se carga la página se ejecuta la función para que aparezca el botón por empezar el QUIZ. La grafica aparecerá después el primer tentativo finalizado con la fecha puesta como etiqueta.
-
-> JS Script
-
-Cuando se carga la página aparecerán las categorías para empezar el quiz y un bóton para volver a la home.
-Una vez que se eliga la categoría, en base a la elegida, aparecerán las preguntas y posibles respuestas random.
-En lugar de crear un div por cada pregunta, he inicializado un contador y con el método **setTimeout**, una vez contestado, se incrementa y vuelve a llamar a la función **mostrarPregunta**, sostituyendo la pregunta actual con la siguiente.
-**SI LA API FALLA SALE EL ERROR EN PANTALLA**
-
-> JS Results
-
-Cuando se carga la página se muestra simplemente si hay superado o no el quiz **(Superado si contestas al menos 6 respuestas correctamente)**.
-Y, además, aparece la gráfica solamente del tentativo actual.
-
-
-Espero que se entienda lo mejoooor posible!!! 
-- Donato Marino
+— Donato Marino
